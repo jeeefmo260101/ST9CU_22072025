@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memahami Gratifikasi: Narasi dan Infografis</title>
+    <title>Memahami Gratifikasi: Batasan dan Konsekuensinya</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
         /* Infographic styling */
         .infographic-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start for better text flow */
             margin-bottom: 1rem;
             padding: 1rem;
             background-color: #f0f9ff; /* Lighter blue for infographic items */
@@ -39,6 +39,7 @@
             font-size: 2.5rem;
             margin-right: 1rem;
             color: #0ea5e9; /* Sky blue icon */
+            flex-shrink: 0; /* Prevent icon from shrinking */
         }
         .infographic-text h4 {
             font-weight: 700;
@@ -54,7 +55,11 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
-        /* Removed .qa-infographic-item styles as the section is removed */
+        .list-item-infographic {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #475569;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -67,79 +72,96 @@
         <section class="card">
             <h2 class="text-2xl font-semibold text-gray-700 mb-4">Narasi: Mengurai Makna Gratifikasi</h2>
             <p class="mb-4 text-gray-700">
-                Gratifikasi seringkali disalahpahami sebagai bentuk suap mutlak. Namun, kenyataannya lebih kompleks. Tidak semua gratifikasi merupakan pelanggaran hukum; ada jenis gratifikasi yang diperbolehkan, tergantung pada konteks, nilai, tujuan, dan pihak yang menerima.
+                Gratifikasi adalah salah satu bentuk tindak pidana korupsi yang diatur secara khusus dalam Pasal 12B dan 12C Undang-Undang Tindak Pidana Korupsi. Sejak tahun 2001, pemberian dalam bentuk apapun kepada Pegawai Negeri atau Penyelenggara Negara (Pn/PN) dapat dianggap sebagai suap jika berhubungan dengan jabatan dan bertentangan dengan kewajiban atau tugasnya.
             </p>
             <p class="mb-4 text-gray-700">
-                Menurut Undang-Undang Nomor 20 Tahun 2001 Pasal 12B ayat (1), gratifikasi didefinisikan secara luas. Ini mencakup segala bentuk pemberian seperti uang, barang, diskon, fasilitas perjalanan, penginapan, pinjaman tanpa bunga, hingga pengobatan gratis. Pemberian ini dapat terjadi baik secara langsung maupun melalui media elektronik, serta bisa terjadi di dalam maupun luar negeri.
+                Namun tidak semua gratifikasi dilarang. Jika penerima gratifikasi melapor ke KPK dalam waktu 30 hari kerja sejak menerima gratifikasi, maka ia dibebaskan dari ancaman pidana. Hal ini ditegaskan dalam Pasal 12C UU Tipikor dan diperkuat dalam Pasal 16 UU KPK serta Peraturan KPK (Perkom) No. 02 Tahun 2014 dan No. 06 Tahun 2015.
             </p>
-            <p class="mb-4 text-gray-700">
-                Penting untuk dipahami bahwa gratifikasi menjadi bermasalah ketika diterima oleh pegawai negeri atau penyelenggara negara dan terkait dengan jabatan mereka, namun tidak dilaporkan kepada Komisi Pemberantasan Korupsi (KPK) dalam kurun waktu 30 hari kerja. Dalam kondisi tersebut, gratifikasi dapat dikategorikan sebagai suap.
-            </p>
-            <h3 class="text-xl font-semibold text-gray-700 mb-3">Mengapa Gratifikasi Diatur Ketat?</h3>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Sanksi bagi Gratifikasi yang Tidak Dilaporkan:</h3>
             <ul class="list-disc list-inside mb-4 text-gray-700">
-                <li>Gratifikasi dapat menjadi "suap tertunda," menciptakan ikatan "tanam budi" yang menuntut balasan di kemudian hari.</li>
-                <li>Dapat memicu kebiasaan buruk yang berujung pada tindakan korupsi lainnya.</li>
-                <li>Berpotensi mengganggu objektivitas dan profesionalisme pegawai, serta mendorong penyalahgunaan wewenang.</li>
-                <li>Merusak integritas para penyelenggara negara.</li>
+                <li>Nilai Rp10 juta atau lebih: penerima harus membuktikan bahwa pemberian itu bukan suap.</li>
+                <li>Nilai di bawah Rp10 juta: penuntut umum yang wajib membuktikan bahwa itu adalah suap.</li>
+                <li>Sanksi pidana: penjara 4 sampai 20 tahun, atau seumur hidup, dan denda Rp200 juta - Rp1 miliar.</li>
             </ul>
-            <h3 class="text-xl font-semibold text-gray-700 mb-3">Siapa Saja yang Termasuk dalam Kategori Pegawai Negeri/Penyelenggara Negara?</h3>
-            <p class="mb-4 text-gray-700">
-                Definisi "pegawai negeri" dalam konteks ini lebih luas daripada sekadar Pegawai Negeri Sipil (PNS). Ini mencakup:
-            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Gratifikasi yang Boleh Diterima (Tanpa Laporan jika Sesuai Ketentuan):</h3>
             <ul class="list-disc list-inside mb-4 text-gray-700">
-                <li>Aparatur Sipil Negara (ASN), termasuk PNS dan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK).</li>
-                <li>Pejabat negara dan pejabat publik lainnya.</li>
-                <li>Individu yang gajinya bersumber dari keuangan negara atau daerah.</li>
-                <li>Pegawai korporasi yang menerima bantuan dari negara/daerah atau memanfaatkan fasilitas publik.</li>
+                <li>Pemberian dari keluarga dekat (tidak dalam konflik kepentingan).</li>
+                <li>Hadiah dalam acara adat/keagamaan (nikah, aqiqah, khitan) maksimal Rp1 juta per pemberi.</li>
+                <li>Bantuan karena musibah atau bencana maksimal Rp1 juta.</li>
+                <li>Pemberian sesama pegawai dalam acara pisah sambut, ulang tahun, dll maksimal Rp300 ribu per orang atau Rp1 juta per tahun dari orang yang sama.</li>
+                <li>Sajian makanan yang berlaku umum.</li>
+                <li>Prestasi pribadi dari lomba/kompetisi non-kedinasan yang dibiayai sendiri.</li>
+                <li>Bunga tabungan, keuntungan investasi, manfaat koperasi yang berlaku umum.</li>
+                <li>Seminar kit, modul pelatihan, sertifikat dalam acara resmi kedinasan.</li>
+                <li>Penghargaan dari pemerintah atas prestasi kerja.</li>
+                <li>Kompensasi atas profesi di luar kedinasan yang tidak konflik kepentingan.</li>
             </ul>
-            <p class="mb-4 text-gray-700">
-                Memahami gratifikasi secara bijak adalah krusial. Meskipun tidak semua gratifikasi dilarang, penerimaan yang terkait dengan jabatan dan tidak dilaporkan dapat berimplikasi hukum. Oleh karena itu, bagi pegawai negeri atau penyelenggara negara, sangat penting untuk melaporkan setiap penerimaan yang berpotensi dianggap gratifikasi kepada KPK.
-            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Gratifikasi yang Dilarang:</h3>
+            <p class="mb-2 text-gray-700">Gratifikasi yang berhubungan dengan jabatan dan bertentangan dengan tugas, seperti:</p>
+            <ul class="list-disc list-inside mb-4 text-gray-700">
+                <li>Pemberian saat melayani masyarakat di luar penerimaan resmi.</li>
+                <li>Pemberian saat menyusun anggaran.</li>
+                <li>Pemberian dalam proses audit/monitoring.</li>
+                <li>Gratifikasi saat pelaksanaan perjalanan dinas yang dibayar pihak luar.</li>
+                <li>Pemberian terkait rekrutmen/promosi/mutasi pegawai.</li>
+            </ul>
         </section>
 
         <section class="card">
             <h2 class="text-2xl font-semibold text-gray-700 mb-4 text-center">Infografis: Poin Penting Gratifikasi</h2>
             <div class="grid-infographic">
                 <div class="infographic-item">
-                    <span class="infographic-icon">🎁</span>
-                    <div class="infographic-text">
-                        <h4>Apa Itu Gratifikasi?</h4>
-                        <p>Segala bentuk pemberian (uang, barang, diskon, fasilitas) yang diterima pegawai negeri.</p>
-                    </div>
-                </div>
-                <div class="infographic-item">
                     <span class="infographic-icon">⚖️</span>
                     <div class="infographic-text">
-                        <h4>Kapan Menjadi Suap?</h4>
-                        <p>Jika berhubungan dengan jabatan dan tidak dilaporkan ke KPK dalam 30 hari kerja.</p>
+                        <h4>Definisi Gratifikasi</h4>
+                        <p>Pemberian apapun kepada Pegawai Negeri/Penyelenggara Negara yang dapat dianggap suap jika berhubungan dengan jabatan dan bertentangan dengan tugas.</p>
                     </div>
                 </div>
                 <div class="infographic-item">
-                    <span class="infographic-icon">👥</span>
+                    <span class="infographic-icon">⏱️</span>
                     <div class="infographic-text">
-                        <h4>Siapa Pegawai Negeri?</h4>
-                        <p>ASN, pejabat negara, dan siapa pun yang digaji dari keuangan negara/daerah atau korporasi terkait.</p>
+                        <h4>Bebas Pidana Jika Dilaporkan</h4>
+                        <p>Penerima dibebaskan dari ancaman pidana jika melapor ke KPK dalam 30 hari kerja.</p>
                     </div>
                 </div>
                 <div class="infographic-item">
-                    <span class="infographic-icon">🚫</span>
+                    <span class="infographic-icon">💰</span>
                     <div class="infographic-text">
-                        <h4>Mengapa Dilarang?</h4>
-                        <p>Mencegah "suap tertunda", kebiasaan buruk, penyalahgunaan wewenang, dan merusak integritas.</p>
+                        <h4>Sanksi & Pembuktian</h4>
+                        <ul class="list-disc list-inside mt-2">
+                            <li class="list-item-infographic">Rp10 juta ke atas: penerima wajib membuktikan bukan suap.</li>
+                            <li class="list-item-infographic">Di bawah Rp10 juta: penuntut umum wajib membuktikan suap.</li>
+                            <li class="list-item-infographic">Pidana: 4-20 tahun penjara / seumur hidup, denda Rp200 juta - Rp1 miliar.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="infographic-item">
-                    <span class="infographic-icon">📝</span>
+                    <span class="infographic-icon">✅</span>
                     <div class="infographic-text">
-                        <h4>Kewajiban Pelaporan</h4>
-                        <p>Setiap gratifikasi yang berpotensi dianggap suap wajib dilaporkan ke KPK dalam 30 hari.</p>
+                        <h4>Gratifikasi yang Boleh Diterima (Contoh)</h4>
+                        <ul class="list-disc list-inside mt-2">
+                            <li class="list-item-infographic">Dari keluarga dekat (tanpa konflik kepentingan).</li>
+                            <li class="list-item-infographic">Hadiah acara adat/keagamaan (maks. Rp1 juta/pemberi).</li>
+                            <li class="list-item-infographic">Bantuan musibah (maks. Rp1 juta).</li>
+                            <li class="list-item-infographic">Pemberian sesama pegawai (maks. Rp300 ribu/orang).</li>
+                            <li class="list-item-infographic">Sajian makanan umum.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="infographic-item">
-                    <span class="infographic-icon">💡</span>
+                    <span class="infographic-icon">❌</span>
                     <div class="infographic-text">
-                        <h4>Pembeda Suap & Gratifikasi</h4>
-                        <p>Unsur niat dan kesepakatan menjadi kunci pembeda antara keduanya.</p>
+                        <h4>Gratifikasi yang Dilarang (Contoh)</h4>
+                        <ul class="list-disc list-inside mt-2">
+                            <li class="list-item-infographic">Saat melayani masyarakat di luar penerimaan resmi.</li>
+                            <li class="list-item-infographic">Saat menyusun anggaran.</li>
+                            <li class="list-item-infographic">Dalam proses audit/monitoring.</li>
+                            <li class="list-item-infographic">Perjalanan dinas dibayar pihak luar.</li>
+                            <li class="list-item-infographic">Terkait rekrutmen/promosi/mutasi pegawai.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
